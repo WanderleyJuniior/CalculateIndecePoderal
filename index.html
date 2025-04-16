@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Índice Ponderal</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>ÍNDICE PODERAL</h2>
+    <div class="formula">Fórmula: IP = P × PT / Pa</div>
+
+    <label for="peso">Peso (P):</label>
+    <input type="number" id="peso" placeholder="Digite o peso">
+
+    <label for="pt">Perímetro Torácico (PT):</label>
+    <input type="number" id="pt" placeholder="Digite o perímetro torácico">
+
+    <label for="pa">Perímetro Abdominal (Pa):</label>
+    <input type="number" id="pa" placeholder="Digite o perímetro abdominal">
+
+    <div class="botoes">
+      <button id="btnCalcular" onclick="calcularIP()">Calcular IP</button>
+      <button id="btnReiniciar" onclick="fazerOutroCalculo()">Fazer outro cálculo</button>
+    </div>
+
+    <div class="resultado" id="resultado"></div>
+  </div>
+
+  <script src="index.js"></script>
+ 
+</body>
+</html>
