@@ -94,6 +94,17 @@
     min-height: 30px;
   }
 
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    background: #ffffff;
+    padding: 1rem 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #ddd;
+  }
   @media (max-width: 480px) {
     .botoes {
       flex-direction: column;
