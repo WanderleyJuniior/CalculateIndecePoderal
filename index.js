@@ -7,11 +7,13 @@ function calcularIP() {
     if (!peso || !pt || !pa || pa === 0) {
       resultadoDiv.innerText = "Preencha todos os campos corretamente.";
       resultadoDiv.style.color = "#dc3545";
+        alert("Á campos vazio. Preecha por favor 🧐!")
       return;
     }
 
     const ip = (peso * pt) / pa;
-    resultadoDiv.style.color = "#17a2b8";
+    resultadoDiv.style.color = "#222";
+    resultadoDiv.style.fontSize = "23px"
     resultadoDiv.innerText = `IP calculado: ${ip.toFixed(2)}`;
   }
 
